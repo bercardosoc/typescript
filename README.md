@@ -1,1 +1,1 @@
-# typescript
+# It is my TypeScript/JavaScript notes
