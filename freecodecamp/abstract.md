@@ -176,3 +176,31 @@ const admin = new Admin("Foo", "Bar")
 
 # Generic interfaces and functions
 
+ 
+- If you do not provide argument type - it will be any
+- Bit T is as default name for generic
+- All generic data types are written inside <>
+
+```json 
+
+const addId = <T>(obj) => {
+    const id = Math.random().toString(16)
+    return {
+        ...obj,
+        id,
+    }
+}
+
+interface UserInterface { 
+    name: string 
+}
+
+const user = {
+    name: "Jack",
+}
+
+const result = addId<UserInterface>(user)
+
+```
+
+
